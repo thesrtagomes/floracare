@@ -8,6 +8,7 @@
     --background-color:#B6D0A6;
     --title-color: #305834;
     --footer-title-font: font-family: "Italiana", sans-serif;
+    --dark-grey: #343434;
 }
 
 body {
@@ -29,7 +30,8 @@ footer {
 header a {
     display: block;
     text-decoration: none;
-    color: var(--title-color);  
+    font-weight: bolder;
+    color: var(--dark-grey);  
     background-color: var(--background-color);
     padding: 10px 40px 10px 40px;
     border-radius: 8px;
@@ -42,8 +44,7 @@ header a {
 footer span {
     display: block;
     text-decoration: none;
-    color: var(--title-color);  
-    background-color: var(--background-color);
+    color: black;  
     padding: 5px 35px 5px 35px;
     border-radius: 5px;
     font-family: var(--footer-title-font); 
@@ -60,7 +61,7 @@ main {
 
 main h2 {
     font-size: 0.95em;
-    font-weight: normal
+    font-weight: bolder;
 }
 
 .img_container {
@@ -76,8 +77,10 @@ main section div img {
 }
 #add_button {
     margin-top: 30px;
-    height: 35px;
-    width: 35px;
     margin-left: auto;
 }
 
+#add_button img {
+    height: 35px;
+    width: 35px;
+}
