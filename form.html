@@ -4,9 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/form.css">
-    <title>Nova Planta</title>
+    <title>Adicionar Nova Planta</title>
 </head>
 <body>
-    
+    <header>
+        <a href="./index.html">
+            <img id="home_icon" src="./images/homepage_logo.svg" alt="Home Icon">
+        </a>
+        <p><span id="nome_da_planta">Adicionar Nova Planta:</span></p>
+    </header>
+    <main>
+      <div id="formulario">
+        <form action="URL_DO_SEU_BACKEND" method="POST">
+          <ul>
+            <li>
+              <label for="name">Nome:</label>
+              <input type="text" id="name" name="nome_da_planta" />
+            </li>
+            <li>
+              <label for="nome_cientifico">Nome Científico:</label>
+              <input type="text" id="nome_cientifico" name="nome_cientifico" />
+            </li>
+            <li>
+              <label>Preferência de ambiente:</label>
+                <input type="radio" id="interno" name="preferencia_de_ambiente" value="interno">
+                <label for="interno">Interno</label>
+                <input type="radio" id="externo" name="preferencia_de_ambiente" value="externo">
+                <label for="externo">Externo</label>
+            </li>
+            <li>
+                <label>Iluminação:</label>
+                <input type="radio" id="pouca_iluminacao" name="iluminacao" value="pouca">
+                <label for="pouca_iluminacao">Pouca</label>
+                <input type="radio" id="media_iluminacao" name="iluminacao" value="media">
+                <label for="media_iluminacao">Média</label>
+                <input type="radio" id="intensa_iluminacao" name="iluminacao" value="intensa">
+                <label for="intensa_iluminacao">Intensa</label>
+            </li>
+            <li>
+                <label>Hidratação:</label>
+                <input type="radio" id="pouca_hidratacao" name="hidratacao" value="pouca">
+                <label for="pouca_hidratacao">Pouca</label>
+                <input type="radio" id="media_hidratacao" name="hidratacao" value="media">
+                <label for="media_hidratacao">Média</label>
+                <input type="radio" id="intensa_hidratacao" name="hidratacao" value="intensa">
+                <label for="intensa_hidratacao">Intensa</label>
+            </li>
+            <li>
+                <label for="curiosidades">Curiosidades:</label>
+                <input type="text" id="curiosidades" name="curiosidades" />
+            </li>
+            <li>
+                <label>Localização:</label>
+                <input type="radio" id="cozinha" name="localizacao" value="cozinha">
+                <label for="cozinha">Cozinha</label>
+                <input type="radio" id="sala" name="localizacao" value="sala">
+                <label for="sala">Sala</label>
+                <input type="radio" id="externo" name="localizacao" value="externo">
+                <label for="externo">Externo</label>
+            </li>
+            <li class="button">
+              <button type="submit">Salvar</button>
+            </li>
+          </ul>
+        </form>
+    </div>
+    </main>
+    <footer>
+        <span>2024 - Pamela Gomes</span>
+    </footer>
 </body>
 </html>
