@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/formulario.css">
+    <title>Adicionar Nova Planta</title>
+</head>
+<body>
+    <header>
+        <a href="./index.html">
+            <img id="home_icon" src="./images/homepage_logo.svg" alt="Home Icon">
+        </a>
+        <p><span id="nome_da_planta">Adicionar Nova Planta:</span></p>
+    </header>
+    <main>
+      <div id="formulario">
+        <form action="URL_DO_SEU_BACKEND" method="POST">
+          <ul>
+            <li>
+              <label for="name">Nome:</label>
+              <input type="text" id="name" name="nome_da_planta" />
+            </li>
+            <li>
+              <label for="nome_cientifico">Nome Científico:</label>
+              <input type="text" id="nome_cientifico" name="nome_cientifico" />
+            </li>
+            <li>
+                <label for="curiosidades">Curiosidades:</label>
+                <input type="text" id="curiosidades" name="curiosidades" />
+            </li>
+            <li>
+              <label for="adubagem">Adubagem:</label>
+              <input type="text" id="adubagem" name="adubagem" />
+          </li>
+            <div class="form_box">
+              <label for="preferencia_de_ambiente">Preferência de ambiente:</label>
+              <select id="preferencia_de_ambiente" name="preferencia_de_ambiente">
+                <option value="interno">Interno</option>
+                  <option value="externo">Externo</option>
+              </select>
+          </div>
+          <div>
+            <li>
+                <label for="iluminacao">Iluminação:</label>
+                <select name="iluminacao" id="iluminacao">
+                  <option value="pouca">Pouca</option>
+                  <option value="media">Média</option>
+                  <option value="intensa">Intensa</option>
+                </select>
+            </li>
+          </div>
+          <div>
+            <li>
+                <label for="hidratacao">Hidratação:</label>
+                <select name="iluminacao" id="iluminacao">
+                  <option value="pouca">Pouca</option>
+                  <option value="media">Média</option>
+                  <option value="intensa">Intensa</option>
+                </select>
+            </li>
+          </div>
+          <div>
+            <li>
+                <label for="localizacao">Localização:</label>
+                <select name="localizacao" id="localizacao">
+                  <option value="area">Área</option>
+                  <option value="cozinha">Cozinha</option>
+                  <option value="sala">Sala</option>
+                </select>
+            </li>
+          </div>
+          </ul>
+          <li class="button" id="upload">
+            <a>
+              <img src="./images/upload.png" alt="Upload Icon">
+            </a>
+          </li>
+          <li class="button">
+            <button type="submit">Salvar</button>
+          </li>
+        </form>
+    </div>
+    </main>
+    <footer>
+        <span>2024 - Pamela Gomes</span>
+    </footer>
+</body>
+</html>
